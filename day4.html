@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>login form</title>
+	<style type="text/css">
+		img{
+			margin-left: 50%;
+            margin-top: 25%;
+		}
+		h2{
+			color: blue;
+		}
+		.container{
+			margin-left: 50%;
+			margin-top: 5%
+		}
+		button{
+			padding-left: 70px;
+			padding-right: 70px;
+			background: cyan;
+		}
+		
+		</style>
+
+</head>
+<body>
+<div>
+	<img src = "Penguins.jpg" style= "border-radius:100%" width="150 px" height="150 px">
+	<h2 style="margin-left: 50%">BEAUXBATON</h2>
+</div>
+<div class="container">
+	<label><b>Username</b></label><br>
+	<input type="text" placeholder="Enter Username" id="unamme" required><br><br>
+	<label><b>Password</b></label><br>
+	<input type="password" placeholder="Enter Password" id="psw" required><br><br>
+	<button type="submit" onclick="myFun()">Login</button>
+</div>
+<div class="container" style="background: blue"></div>
+</body>
+<script type="text/javascript">
+	function myFun()
+	{
+      //alert("Here");
+      var name = document.getElementById("unamme").value;
+      var name1 = document.getElementById("psw").value;
+      if(!name.length || !name1)
+           alert("Enter valid Username or Password ");     
+      else
+      	alert("Save password");
+	}
+</script>
+
+
+</html>
